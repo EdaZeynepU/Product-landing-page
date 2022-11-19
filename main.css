@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: rgb(171, 171, 171);
+}
+
+/*navbar*/
+#navbar{
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    height: 70px;
+    background: rgba(62, 62, 62, 0.342);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    top: 1;
+    z-index: 4;
+}
+
+#logo{
+    margin-left: 15%;
+    height: 70px;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 4%;
+}
+
+#navbar ul .list-item{
+    list-style: none;
+    padding: 15px;
+}
+
+#navbar ul .list-link{
+    color: black;
+    text-decoration: none;
+    
+}
+
+/*navbar hover*/
+#navbar ul .list-item :hover{
+    background-color: rgba(188, 188, 188, 0.648);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*welcome*/
+
+#welcome {
+    color: rgba(6, 6, 6, 0.7);
+    height: 400px;
+    background-image: linear-gradient(rgb(171, 171, 171),rgb(128, 128, 128, 1)); 
+    z-index: 1;
+}
+#welcome h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 80px;
+    display: block;
+
+}
+#welcome p{
+    display: inline;
+    margin-left: 80px;
+}
+#welcome #standing{
+    z-index: 1;
+    margin-left: 70%;
+}
+
+/*products*/
+
+#products{
+    background-image: linear-gradient(rgba(128, 128, 128, 1) , rgba(128, 128, 128, 0.05)), url(photos\\spotLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.cards{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    height: 250px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+#products h1{
+    color: rgba(6, 6, 6, 0.7);
+    margin-bottom: 400px;
+}
+
+.card:hover{
+    height: 300px;
+    width: 200px;
+}
+
+
+/*Pricing*/
+
+#pricing{
+    height: 800px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.prices h1{
+    color: rgba(27, 27, 27, 0.395);
+    padding: 15px;
+}
+.prices p{
+    padding: 10px 15px;
+}
+.prices{
+    margin: 50px;
+    height: 180px;
+    border-radius: 20px;
+    border-color: rgb(90, 89, 88);
+    background-color: rgba(192, 192, 192, 0.468);
+}
+
+.prices a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.726);
+}
+
+.prices button{
+    background: rgb(128, 128, 128);
+    padding: 5px;
+    margin-left: 80%;
+    border-radius: 5px;
+}
+
+#pricing #silver{
+    background: rgba(146, 145, 145, 0.904);
+}
+
+#pricing #gold{
+    background: rgba(129, 121, 74, 0.932);
+}
+
+#pricing #dimond{
+    background: rgb(85, 132, 151);
+}
+@media only screen and (min-width: 800px) {
+    #pricing{
+        align-items: center;
+    }
+    .prices{
+        width: 600px;
+    }
+    #pricing #gold{
+        margin-left:20vW;
+    }
+    #pricing #silver{
+        margin-left: -13vw;
+    }
+    #pricing #dimond{
+        margin-left: -13vw;
+    }
+  }
