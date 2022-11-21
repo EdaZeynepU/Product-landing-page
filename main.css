@@ -8,13 +8,13 @@ body{
     background-color: rgb(171, 171, 171);
 }
 
-/*navbar*/
+/*navbar ------------------------------------*/
 #navbar{
     position: fixed;
     top:0; left:0;
     width: 100%;
     height: 70px;
-    background: rgba(62, 62, 62, 0.342);
+    background: rgba(118, 118, 118, 0.6);
     display: flex;
     align-items: center;
     position: sticky;
@@ -52,7 +52,7 @@ body{
 }
 
 
-/*welcome*/
+/*welcome ------------------------------------*/
 
 #welcome {
     color: rgba(6, 6, 6, 0.7);
@@ -76,7 +76,7 @@ body{
     margin-left: 70%;
 }
 
-/*products*/
+/*products ------------------------------------*/
 
 #products{
     background-image: linear-gradient(rgba(128, 128, 128, 1) , rgba(128, 128, 128, 0.05)), url(photos\\spotLight.jpg);
@@ -183,4 +183,189 @@ body{
     #pricing #dimond{
         margin-left: -13vw;
     }
+}
+
+/*Blog ------------------------------------*/
+
+#blog{
+    height: 1100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgb(139, 139, 139));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#blog h1{
+    color: rgb(186, 186, 186);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.comments{
+    background: rgba(181, 154, 123, 0.653);
+    height: 200px;
+    width: 450px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(78, 71, 65);
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.comments img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+#blog .comments:nth-child(even){
+    margin-left: 30vw;
+}
+
+#blog .comments:nth-child(odd){
+    margin-right: 35vw;
+}
+#blog p{
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    font-weight: 600;
+
+}
+.comments pre{
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+
+/*contact ------------------------------------*/
+
+#contact{
+    padding-top: 100px;
+    height: 1000px;
+    background: linear-gradient(rgb(139, 139, 139),rgb(188, 184, 179));
+    
+}
+
+#contact h1{
+    padding: 100px 200px 50px 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(78, 75, 59);
+}
+
+
+/*send me your message*/
+
+#contact #sendMail{
+    background: rgba(87, 87, 87, 0.363);
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 400px;
+    padding: 3vw;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#contact #mail{
+    display: inline;
+    padding: 5px 0 0 5px;
+    height: 200px;
+    width: 500px; 
+    margin: 10px;
+}
+
+#contact #email{
+    display: inline;
+    padding-left: 5px;
+    margin: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#contact #submit{
+    height: 40px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+
+/*Social media links*/
+
+
+.fa {
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+#socialMedia{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
   }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*footer ------------------------------------*/
+footer{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
